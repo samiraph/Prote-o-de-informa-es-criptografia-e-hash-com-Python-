@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CryptoCode - Criptografia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🔐 CryptoCode</div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#criptografia">Criptografar</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+            <span class="tag">PROJETO DE PROGRAMAÇÃO</span>
+
+            <h1>
+                Proteja suas palavras com
+                <span>criptografia!</span>
+            </h1>
+
+            <p>
+                Descubra como funciona a substituição de letras
+                utilizando um dicionário personalizado.
+            </p>
+
+            <a href="#criptografia" class="btn">
+                Começar agora →
+            </a>
+        </div>
+
+    </section>
+
+    <main>
+
+        <section class="criptografia" id="criptografia">
+
+            <div class="titulo">
+                <h2>Criptografar mensagem</h2>
+                <p>
+                    Digite uma palavra e transforme suas letras.
+                </p>
+            </div>
+
+            <div class="painel">
+
+                <label for="senha">Sua mensagem</label>
+
+                <input
+                    type="text"
+                    id="senha"
+                    placeholder="Exemplo: marcelo"
+                >
+
+                <div class="botoes">
+
+                    <button onclick="criptografar()">
+                        🔒 Criptografar
+                    </button>
+
+                    <button onclick="descriptografar()" class="btn-secundario">
+                        🔓 Descriptografar
+                    </button>
+
+                </div>
+
+                <div class="resultado">
+
+                    <span>RESULTADO DA OPERAÇÃO</span>
+
+                    <h3 id="resultado">
+                        Seu resultado aparecerá aqui.
+                    </h3>
+
+                    <button class="copiar" onclick="copiarResultado()">
+                        📋 Copiar resultado
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="sobre" id="sobre">
+
+            <h2>Como funciona a criptografia?</h2>
+
+            <p>
+                O sistema utiliza dois conjuntos de letras.
+                O primeiro é o alfabeto original e o segundo
+                é um dicionário personalizado.
+            </p>
+
+            <div class="dicionarios">
+
+                <div class="bloco">
+                    <h3>Alfabeto original</h3>
+                    <p>abcdefghijklmnopqrstuvwxyz</p>
+                </div>
+
+                <div class="bloco">
+                    <h3>Dicionário secreto</h3>
+                    <p>qwertyuiopasdfghjklzxcvbnm</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="exemplo">
+
+            <h2>Exemplo prático</h2>
+
+            <p>Veja como a palavra MARCELO é transformada:</p>
+
+            <div class="comparacao">
+
+                <div>
+                    <span>ORIGINAL</span>
+                    <h3>MARCELO</h3>
+                </div>
+
+                <div class="seta">→</div>
+
+                <div>
+                    <span>CRIPTOGRAFADA</span>
+                    <h3>DQKETSG</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CryptoCode © 2026</p>
+        <p>Projeto educacional - HTML, CSS e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
